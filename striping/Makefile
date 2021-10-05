@@ -4,10 +4,12 @@ t1:
 t2:
 	sed -i 's/striping/striping_synth/' striping_synth.v
 t3:
-	iverilog -o bin BancoPruebas_striping.v 
+	iverilog -o bin BancoPruebas_striping.v cmos_cells.v
 t4:
 	vvp bin
 t5:
 	gtkwave striping.vcd
 clean:
 	rm -r *.vcd bin
+
+	
