@@ -1,5 +1,5 @@
 $date
-	Tue Oct 05 17:00:37 2021
+	Tue Oct  5 17:27:29 2021
 $end
 $version
 	Icarus Verilog
@@ -7,270 +7,162 @@ $end
 $timescale
 	1ns
 $end
-$scope module BUF $end
-$var wire 1 ! A $end
-$var wire 1 " Y $end
-$upscope $end
-$scope module BancoPruebas_unstriping $end
+$scope module probador_un_striping $end
+$var wire 32 ! data_out [31:0] $end
+$var wire 32 " data_out_synth [31:0] $end
 $var wire 1 # valid_out $end
-$var wire 1 $ valid_1 $end
-$var wire 1 % valid_0 $end
-$var wire 1 & reset $end
-$var wire 32 ' lane_1 [31:0] $end
-$var wire 32 ( lane_0 [31:0] $end
-$var wire 32 ) data_out [31:0] $end
-$var wire 1 * clk_f $end
-$var wire 1 + clk_2f $end
-$scope module probador_un_stripingbp $end
-$var wire 1 # valid_out $end
-$var wire 32 , data_out [31:0] $end
-$var reg 1 + clk_2f $end
-$var reg 1 * clk_f $end
-$var reg 32 - lane_0 [31:0] $end
-$var reg 32 . lane_1 [31:0] $end
-$var reg 1 & reset $end
-$var reg 1 % valid_0 $end
-$var reg 1 $ valid_1 $end
+$var wire 1 $ valid_out_synth $end
+$var reg 1 % clk_2f $end
+$var reg 1 & clk_f $end
+$var reg 32 ' lane_0 [31:0] $end
+$var reg 32 ( lane_1 [31:0] $end
+$var reg 1 ) reset $end
+$var reg 1 * valid_0 $end
+$var reg 1 + valid_1 $end
 $upscope $end
-$scope module un_stripringbp $end
-$var wire 1 + clk_2f $end
-$var wire 32 / lane_0 [31:0] $end
-$var wire 32 0 lane_1 [31:0] $end
-$var wire 1 & reset $end
-$var wire 1 % valid_0 $end
-$var wire 1 $ valid_1 $end
-$var reg 32 1 data_out [31:0] $end
-$var reg 1 2 selector $end
-$var reg 1 # valid_out $end
-$upscope $end
-$upscope $end
-$scope module DFF $end
-$var wire 1 3 C $end
-$var wire 1 4 D $end
-$var reg 1 5 Q $end
-$upscope $end
-$scope module DFFSR $end
-$var wire 1 6 C $end
-$var wire 1 7 D $end
-$var wire 1 8 R $end
-$var wire 1 9 S $end
-$var reg 1 : Q $end
-$upscope $end
-$scope module NAND $end
-$var wire 1 ; A $end
-$var wire 1 < B $end
-$var wire 1 = Y $end
-$upscope $end
-$scope module NOR $end
-$var wire 1 > A $end
-$var wire 1 ? B $end
-$var wire 1 @ Y $end
-$upscope $end
-$scope module NOT $end
-$var wire 1 A A $end
-$var wire 1 B Y $end
+$scope module un_stripring $end
+$var wire 1 , clk_2f $end
+$var wire 32 - lane_0 [31:0] $end
+$var wire 32 . lane_1 [31:0] $end
+$var wire 1 / reset $end
+$var wire 1 0 valid_0 $end
+$var wire 1 1 valid_1 $end
+$var reg 32 2 data_out [31:0] $end
+$var reg 1 3 selector $end
+$var reg 1 4 valid_out $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-zB
-zA
-x@
-z?
-z>
-x=
-z<
-z;
-x:
-z9
-z8
-z7
-z6
-x5
-z4
-z3
-x2
-bx 1
-b0 0
-b0 /
-b0 .
-b0 -
-bx ,
+x4
+x3
+bx 2
+z1
+z0
+z/
+bz .
+bz -
+z,
 0+
 0*
-bx )
+0)
 b0 (
 b0 '
 0&
 0%
-0$
-x#
-z"
-z!
+z$
+z#
+bz "
+bz !
 $end
 #1
-1*
-#2
-02
-b11111111111111111111111111111111 '
-b11111111111111111111111111111111 .
-b11111111111111111111111111111111 0
-b11111111111111111111111111111111 (
-b11111111111111111111111111111111 -
-b11111111111111111111111111111111 /
-1%
-0*
-1+
-#3
-1*
-#4
-0*
-0+
-#5
-1*
-#6
-b11101110111011101110111011101110 '
-b11101110111011101110111011101110 .
-b11101110111011101110111011101110 0
-1$
-1#
-12
-b11111111111111111111111111111111 )
-b11111111111111111111111111111111 ,
-b11111111111111111111111111111111 1
-0*
-1+
-#7
-1*
-#8
-0*
-0+
-#9
-1*
-#10
-b11101110111011101110111011101110 )
-b11101110111011101110111011101110 ,
-b11101110111011101110111011101110 1
-02
-b11011101110111011101110111011101 (
-b11011101110111011101110111011101 -
-b11011101110111011101110111011101 /
-0*
-1+
-#11
-1*
-#12
-0*
-0+
-#13
-1*
-#14
-b11001100110011001100110011001100 '
-b11001100110011001100110011001100 .
-b11001100110011001100110011001100 0
-12
-b11011101110111011101110111011101 )
-b11011101110111011101110111011101 ,
-b11011101110111011101110111011101 1
-0*
-1+
-#15
-1*
-#16
-0*
-0+
-#17
-1*
-#18
-b11001100110011001100110011001100 )
-b11001100110011001100110011001100 ,
-b11001100110011001100110011001100 1
-02
-b0 (
-b0 -
-b0 /
-0%
-0*
-1+
-#19
-1*
-#20
-0*
-0+
-#21
-1*
-#22
-b0 '
-b0 .
-b0 0
-0$
-b0 )
-b0 ,
-b0 1
-12
-0#
-0*
-1+
-#23
-1*
-#24
-0*
-0+
-#25
-1*
-#26
-02
-b11 (
-b11 -
-b11 /
-1%
-0*
-1+
-#27
-1*
-#28
-0*
-0+
-#29
-1*
-#30
-b100 '
-b100 .
-b100 0
-1$
-1#
-12
-b11 )
-b11 ,
-b11 1
-0*
-1+
-#31
-1*
-#32
-0*
-0+
-#33
-1*
-#34
-b100 )
-b100 ,
-b100 1
-02
-0*
-1+
-#35
-1*
-#36
-0*
-0+
-#37
-1*
-#38
 1&
-12
-b11 )
-b11 ,
-b11 1
-0*
+#2
+b11111111111111111111111111111111 (
+b11111111111111111111111111111111 '
+1*
+0&
+1%
+#3
+1&
+#4
+0&
+0%
+#5
+1&
+#6
+b11101110111011101110111011101110 (
 1+
+0&
+1%
+#7
+1&
+#8
+0&
+0%
+#9
+1&
+#10
+b11011101110111011101110111011101 '
+0&
+1%
+#11
+1&
+#12
+0&
+0%
+#13
+1&
+#14
+b11001100110011001100110011001100 (
+0&
+1%
+#15
+1&
+#16
+0&
+0%
+#17
+1&
+#18
+b0 '
+0*
+0&
+1%
+#19
+1&
+#20
+0&
+0%
+#21
+1&
+#22
+b0 (
+0+
+0&
+1%
+#23
+1&
+#24
+0&
+0%
+#25
+1&
+#26
+b11 '
+1*
+0&
+1%
+#27
+1&
+#28
+0&
+0%
+#29
+1&
+#30
+b100 (
+1+
+0&
+1%
+#31
+1&
+#32
+0&
+0%
+#33
+1&
+#34
+0&
+1%
+#35
+1&
+#36
+0&
+0%
+#37
+1&
+#38
+1)
+0&
+1%

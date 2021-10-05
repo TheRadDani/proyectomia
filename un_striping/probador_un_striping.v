@@ -2,8 +2,8 @@ module probador_un_striping
 ( 
     input [31:0] data_out,
     input valid_out,
- //   input [31:0] data_out_synth,
-  //  input valid_out_synth,
+    input [31:0] data_out_synth,
+    input valid_out_synth,
     output reg valid_0,  
     output reg valid_1,
 	output reg clk_f,
